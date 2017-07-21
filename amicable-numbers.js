@@ -25,7 +25,7 @@ var sumOfArrayElements = (listOfDivisors) => {
     return sum;
 };
 
-var solArray = [];
+var solArray = []; // solArray contains amicable pairs
 for (let i = 1; i < 2000; i++) {
     var dn = sumOfArrayElements(findDivisor(i));
     if (i != dn) {
