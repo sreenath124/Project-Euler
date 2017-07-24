@@ -31,13 +31,14 @@ var nameArr = ["MARY","PATRICIA","LINDA","BARBARA","ELIZABETH","JENNIFER","MARIA
 nameArr.sort();
 var nameSum =0;
 nameArr.forEach(function(name, index){
-debugger;
-	var sum=0;
-	var nameLength = name.length, val = 0;
+	var sum=0,
+	    nameLength = name.length,
+	    val = 0;
 	for( i=0; i<nameLength;i++){
 		val = parseInt(letterValue[name[i]]);
 		sum += val;
-		
 	}
 	nameSum += sum*(index+1);
 });
+
+//nameSum holds the answer.
