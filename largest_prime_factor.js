@@ -8,15 +8,12 @@ function pf(num){
   while(num !== 1){
     if(num % i == 0){
       num = num/i;
-      if(!pff.includes(i))
-        pff.push(i)
+      if(!primeFactors.includes(i))
+        primeFactors.push(i)
     }
-    else{
+    else
       i = i+1;
-    }
   }
-  var largestPF = pff.reduce(function(a, b) {
-    return Math.max(a, b);
-  });
+  var largestPF = Math.max(...primeFactors);
   return largestPF;
 }
